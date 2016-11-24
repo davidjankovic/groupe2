@@ -3,7 +3,7 @@
 session_start();
 
 require_once 'inc/functions.php';
-require_once 'inc/dbConnect.php';
+require_once 'inc/dbConnection.php';
 
 if(isset($_POST['login'])) {
     $user = getUserByLogin($pdo, $_POST['email']);
